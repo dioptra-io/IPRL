@@ -1,6 +1,6 @@
 # IPRL — Retina Coordinator
 
-This repository is the source of truth for version compatibility across the Retina network measurement system, which consists of three components: [retina-agent](https://github.com/dioptra-io/retina-agent), [retina-orchestrator](https://github.com/dioptra-io/retina-orchestrator), and [retina-generator](https://github.com/dioptra-io/retina-generator). Shared API types are defined in [retina-commons](https://github.com/dioptra-io/retina-commons).
+This repository is the source of truth for version compatibility across the Retina network measurement system, which consists of three components: [retina-agent](https://github.com/dioptra-io/retina-agent), [retina-orchestrator](https://github.com/dioptra-io/retina-orchestrator), and [retina-generator](https://github.com/dioptra-io/retina-generator).
 
 It contains no application code — only a compatibility matrix defining which component versions form a coherent Retina release.
 
@@ -11,7 +11,8 @@ It contains no application code — only a compatibility matrix defining which c
 | [retina-agent](https://github.com/dioptra-io/retina-agent) | Measurement agent |
 | [retina-orchestrator](https://github.com/dioptra-io/retina-orchestrator) | Orchestration and scheduling |
 | [retina-generator](https://github.com/dioptra-io/retina-generator) | Probe list generator |
-| [retina-commons](https://github.com/dioptra-io/retina-commons) | Shared API types |
+
+Shared API types are defined in [retina-commons](https://github.com/dioptra-io/retina-commons), a library dependency pinned in each component's `go.mod`.
 
 ## Compatibility Matrix
 
@@ -20,9 +21,9 @@ Each file in `versions/` defines a Retina release. The codename is an Alpine pas
 Example `versions/col-de-sarenne.yaml`:
 ```yaml
 name: Col de Sarenne
-retina-agent:        v0.1.3
-retina-orchestrator: v0.2.1
-retina-generator:    v0.1.0
+retina-agent:        v1.0.0
+retina-orchestrator: v1.0.0
+retina-generator:    v1.0.0
 ```
 
 ## Release Naming
