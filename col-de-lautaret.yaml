@@ -1,4 +1,4 @@
 name: Col du Lautaret
-retina-agent:        v2.0.0
-retina-orchestrator: v2.0.0
-retina-iris-pds:     v0.1.0
+retina-agent:        v2.0.1
+retina-orchestrator: v2.0.2
+retina-iris-pds:     v1.0.0
